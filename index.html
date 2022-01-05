@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Data</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="fname">
+    
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lname">
+    
+    <label for="address">Address</label>
+    <input type="text" id="address" name="address">
+    
+    <label for="pincode">Pin Code</label>
+    <input type="number" id="pincode" name="pincode">
+    
+    <label for="gender">Gender</label><br>
+    <div class="gen"> 
+    <label for="gender">Male</label>
+    <input type="radio" id="gender" name="gender">
+    <label for="gender">Female</label>
+    <input type="radio" id="gender" name="gender">
+    </div><br>
+    Choice Of Food
+    <div class="food" id="food">
+       
+    <input id="north-indian" type="checkbox" onChange="add('north-indian')">
+    <label for="north-indian">North-Indian</label>
+    <input id="south-indian" type="checkbox" onChange="add('south-indian')">
+    <label for="south-indian">South-Indian</label>
+    <input id="chinese" type="checkbox" onChange="add('chinese')">
+    <label for="chinese">Chinese</label>
+    <input id="continental" type="checkbox" onChange="add('continental')">
+    <label for="continental">Continental</label>
+    <input id="mexican" type="checkbox" onChange="add('mexican')">
+    <label for="mexican">Mexican</label>
+    </div>
+    
+    <label for="state">State</label>
+    <select id="state">
+    <option>---Please Choose the State---</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Tamil Nadu">Tamil Nadu</option>
+    <option value="Maharashtra">Maharashtra</option>
+    </select>
+    
+    <label for="country">Country</label>
+    <select id="country">
+    <option>---Please Choose the Country---</option>
+
+    <option value="America">America</option>
+    <option value="China">China</option>
+    <option value="India" selected>India</option>
+    <option value="Japan">Japan</option>
+    <option value="Sri Lanka">Sri Lanka</option>
+
+    </select>
+    <!-- <input type="submit" id="button" value="SUBMIT" onclick="AddRow()"> -->
+    <input type="submit" id="button" value="SUBMIT">
+    
+    </form></div>
+    
+    <table class="show">
+    <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Address</th>
+    <th>Pin Code</th>
+    <th>Gender</th>
+    <th>Choice of Food</th>
+    <th>State</th>
+    <th>Country</th>
+    </tr></table>
+    <script src="script.js"></script>
+</body>
+</html>
