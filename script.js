@@ -1,5 +1,5 @@
 var checkedItems=[];
-var Food=['north-indian','south-indian','Chinese','continental','mexican'];
+var Food=['north-indian','south-indian','chinese','continental','mexican'];
 
 const add=(fs)=>{
 if(checkedItems.includes(fs)){
