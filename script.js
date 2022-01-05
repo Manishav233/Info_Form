@@ -40,14 +40,14 @@ function AddRow(){
 var AddRown=document.getElementById("show");
 var NewRow=AddRown.insertRow(n);
 
-list1[x]=document.getElementsById("fname").value;
-list2[x]=document.getElementsById("lname").value;
-list3[x]=document.getElementsById("address").value;
-list4[x]=document.getElementsById("pincode").value;
-list5[x]=document.getElementsById("gender").value;
-list6[x]=document.getElementsById("food").value;
-list7[x]=document.getElementsById("state").value;
-list8[x]=document.getElementsById("country").value;
+list1[x]=document.getElementById("fname").value;
+list2[x]=document.getElementById("lname").value;
+list3[x]=document.getElementById("address").value;
+list4[x]=document.getElementById("pincode").value;
+list5[x]=document.getElementById("gender").value;
+list6[x]=document.getElementById("food").value;
+list7[x]=document.getElementById("state").value;
+list8[x]=document.getElementById("country").value;
 
 
 console.log(list1[x],list2[x],list3[x],list4[x],list5[x],list6[x],list7[x],list8[x]);
@@ -72,4 +72,6 @@ cel8.innerHTML=list8[x];
 console.log(cel1,cel2,cel3,cel4,cel5,cel6,cel7,cel8);
 n++;
 x++;
+
+document.getElementById("subname").reset();
 }

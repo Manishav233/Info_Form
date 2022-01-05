@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-    <form>
+    <form id="subname">
     <label for="fname">First Name</label>
     <input type="text" id="fname" name="fname">
     
@@ -66,11 +66,14 @@
 
     </select>
     <!-- <input type="submit" id="button" value="SUBMIT" onclick="AddRow()"> -->
-    <input type="submit" id="button" value="SUBMIT">
     
-    </form></div>
     
-    <table class="show">
+    </form>
+    
+    <button type="button" id="button">SUBMIT</button>
+    </div>
+    
+    <table id="show">
     <tr>
     <th>First Name</th>
     <th>Last Name</th>
