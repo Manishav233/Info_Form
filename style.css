@@ -4,6 +4,9 @@ padding: 20px;
 border-radius: 10px;
 font-size: 20px;
 max-width:700px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+margin: 20px;
+
 }
 
 .container input,select{
@@ -30,12 +33,24 @@ display: flex;}
 
 table{
 border-collapse:collapse;
-width:100%;
+width:90%;
 margin-top:15px;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+border-radius: 5px;
 }
 
-table th{
-border:2px solid black;
-height:50px;
+table th,td{
+border:1.75px solid brown;
+height:35px;
+border-collapse:collapse;
+background-color:burlywood;
+text-align: center;
 
 }
+
+html{
+background-color:#b3ffff;
+}
+
+p{
+font-size:50px;}

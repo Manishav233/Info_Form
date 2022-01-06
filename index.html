@@ -7,7 +7,10 @@
     <title>Form Data</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- creating html elements for all the fields required in form -->
 <body>
+    <p><b><i>Registration Form</i></b></p>
     <div class="container">
     <form id="subname">
     <label for="fname">First Name</label>
@@ -25,9 +28,9 @@
     <label for="gender">Gender</label><br>
     <div class="gen"> 
     <label for="gender">Male</label>
-    <input type="radio" id="gender" name="gender">
+    <input type="radio" id="gender" name="gender" value="Male">
     <label for="gender">Female</label>
-    <input type="radio" id="gender" name="gender">
+    <input type="radio" id="gender" name="gender" value="Female">
     </div><br>
     Choice Of Food
     <div class="food" id="food">
@@ -44,6 +47,7 @@
     <label for="mexican">Mexican</label>
     </div>
     
+    <!-- Using select tag to get dropdpwn menu for state and country -->
     <label for="state">State</label>
     <select id="state">
     <option>---Please Choose the State---</option>
@@ -72,7 +76,7 @@
     
     <button type="button" id="button">SUBMIT</button>
     </div>
-    
+    <!-- create a table  -->
     <table id="show">
     <tr>
     <th>First Name</th>
