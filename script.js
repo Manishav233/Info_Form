@@ -11,7 +11,7 @@ Food.forEach((fs) => {
 if(!checkedItems.includes(fs)){
 document.getElementById(fs).disabled=false;
 }
-})
+});
 }
 
 }else{
@@ -21,12 +21,15 @@ if(checkedItems.length==2){
         if(!checkedItems.includes(fs)){
         document.getElementById(fs).disabled=true;
         }
-})
+});
+
+}
+
 }
 txt1=checkedItems.join(',');
 }
-}
-console.log(checkedItems.join(''));
+
+// console.log(checkedItems.join(''));
 //Access the submit button 
 var entry=document.getElementById("button");
 entry.addEventListener("click",AddRow);
@@ -34,8 +37,8 @@ var list1=[];
 var list2=[];
 var list3=[];
 var list4=[];
-var list5=[];
-var list6=[];
+//var list5=[];
+//var list6=[];
 var list7=[];
 var list8=[];
 var n=1;
@@ -62,8 +65,11 @@ list1[x]=document.getElementById("fname").value;
 list2[x]=document.getElementById("lname").value;
 list3[x]=document.getElementById("address").value;
 list4[x]=document.getElementById("pincode").value;
-list5[x]=document.getElementById("gender").value;
-list6[x]=document.getElementById("food").value;
+// list5[x]=document.getElementById("gender").value;
+
+const radioButtonValue = document.querySelector(`input[type="radio"][name=gender]:checked`).value;
+
+//list6[x]=document.getElementById("food").value;
 list7[x]=document.getElementById("state").value;
 list8[x]=document.getElementById("country").value;
 
@@ -82,7 +88,7 @@ cel1.innerHTML=list1[x];
 cel2.innerHTML=list2[x];
 cel3.innerHTML=list3[x];
 cel4.innerHTML=list4[x];
-cel5.innerHTML=list5[x];
+cel5.innerHTML=radioButtonValue;
 cel6.innerHTML=txt1;
 cel7.innerHTML=list7[x];
 cel8.innerHTML=list8[x];
