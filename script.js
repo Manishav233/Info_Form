@@ -1,6 +1,6 @@
 var checkedItems=[];
 var Food=['north-indian','south-indian','chinese','continental','mexican'];
-
+var txt1;
 //code to check only 2 items are selected out of 5
 const add=(fs)=>{
 if(checkedItems.includes(fs)){
@@ -13,6 +13,7 @@ document.getElementById(fs).disabled=false;
 }
 })
 }
+
 }else{
 checkedItems.push(fs);
 if(checkedItems.length==2){
@@ -22,9 +23,10 @@ if(checkedItems.length==2){
         }
 })
 }
+txt1=checkedItems.join(',');
 }
 }
-
+console.log(checkedItems.join(''));
 //Access the submit button 
 var entry=document.getElementById("button");
 entry.addEventListener("click",AddRow);
@@ -81,7 +83,7 @@ cel2.innerHTML=list2[x];
 cel3.innerHTML=list3[x];
 cel4.innerHTML=list4[x];
 cel5.innerHTML=list5[x];
-cel6.innerHTML=list6[x];
+cel6.innerHTML=txt1;
 cel7.innerHTML=list7[x];
 cel8.innerHTML=list8[x];
 
